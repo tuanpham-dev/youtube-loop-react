@@ -63,7 +63,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header className="navbar navbar-expand navbar-dark bg-dark">
+      <header className="sticky-top navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand font-weight-bold text-uppercase" href="/">Youtube Loop</a>
           <div className="ml-3 d-flex">
