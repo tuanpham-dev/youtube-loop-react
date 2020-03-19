@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import localStorage from 'local-storage'
 import Header from './Header'
 import YouTube from './YouTube'
 
@@ -19,15 +20,41 @@ export default class App extends Component {
     this.playNextVideo = this.playNextVideo.bind(this)
   }
 
+  componentDidMount() {
+    const savedVideos = localStorage.get('videos')
+    const videos = []
+    let nextId = 0
+    
+    if (savedVideos) {
+      savedVideos.forEach(video => {
+        videos.push({
+          id: nextId,
+          video: video.video
+        })
+
+        nextId++
+      })
+
+      this.setState({
+        videos,
+        nextId
+      })
+    }
+  }
+
   addVideo(youtubeVideoId) {
+    const videos = [...this.state.videos, {
+      id: this.state.nextId,
+      video: youtubeVideoId
+    }]
+
     this.setState({
-      videos: [...this.state.videos, {
-        id: this.state.nextId,
-        video: youtubeVideoId
-      }],
+      videos,
       nextId: this.state.nextId + 1,
       playingVideo: this.state.videos.length === 0 ? this.state.nextId : this.state.playingVideo
     })
+
+    localStorage.set('videos', videos)
   }
 
   removeVideo(i) {
@@ -38,6 +65,8 @@ export default class App extends Component {
       videos,
       playingVideo: this.state.playingVideo === this.state.videos[i].id ? -1 : this.state.playingVideo
     })
+
+    localStorage.set('videos', videos)
   }
 
   stopPlaying() {

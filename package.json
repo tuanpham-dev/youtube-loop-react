@@ -1,6 +1,6 @@
 {
   "name": "youtube-loop-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "homepage": "https://tuanpham-dev.github.io/youtube-loop-react",
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "gh-pages": "^2.2.0",
+    "local-storage": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.0"

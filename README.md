@@ -11,7 +11,8 @@ Repeat YouTube videos. Demo: https://tuanpham-dev.github.io/youtube-loop-react/
 - ✅ Play next video
 - ✅ Play next video when current video is ended
 - ✅ Play first video when last video is ended
-- ❌ Save the list to local storage for future sessions
+- ✅ Save the list to local storage for future sessions
+- ❌ Sort video in the list
 - ❌ Configure volume for each video
 - ❌ Configure start and end range for each video
 
