@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/youtube-loop-react/static/js/main.b76821dd.chunk.js",
-    "main.js.map": "/youtube-loop-react/static/js/main.b76821dd.chunk.js.map",
+    "main.js": "/youtube-loop-react/static/js/main.c4192bdc.chunk.js",
+    "main.js.map": "/youtube-loop-react/static/js/main.c4192bdc.chunk.js.map",
     "runtime-main.js": "/youtube-loop-react/static/js/runtime-main.88966c61.js",
     "runtime-main.js.map": "/youtube-loop-react/static/js/runtime-main.88966c61.js.map",
     "static/css/2.89f067aa.chunk.css": "/youtube-loop-react/static/css/2.89f067aa.chunk.css",
     "static/js/2.1d18156f.chunk.js": "/youtube-loop-react/static/js/2.1d18156f.chunk.js",
     "static/js/2.1d18156f.chunk.js.map": "/youtube-loop-react/static/js/2.1d18156f.chunk.js.map",
     "index.html": "/youtube-loop-react/index.html",
-    "precache-manifest.bd7e215564ed42ae2a75d86f4d5b3f33.js": "/youtube-loop-react/precache-manifest.bd7e215564ed42ae2a75d86f4d5b3f33.js",
+    "precache-manifest.e23fae3dccec7c25771ca292c27ab694.js": "/youtube-loop-react/precache-manifest.e23fae3dccec7c25771ca292c27ab694.js",
     "service-worker.js": "/youtube-loop-react/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/youtube-loop-react/static/css/2.89f067aa.chunk.css.map",
     "static/js/2.1d18156f.chunk.js.LICENSE.txt": "/youtube-loop-react/static/js/2.1d18156f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.88966c61.js",
     "static/css/2.89f067aa.chunk.css",
     "static/js/2.1d18156f.chunk.js",
-    "static/js/main.b76821dd.chunk.js"
+    "static/js/main.c4192bdc.chunk.js"
   ]
 }
