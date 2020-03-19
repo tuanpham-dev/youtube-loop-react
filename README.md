@@ -1,5 +1,5 @@
 # YouTube Loop in React
-Repeat YouTube videos
+Repeat YouTube videos. Demo: https://tuanpham-dev.github.io/youtube-loop-react/
 
 ![youtube-loop-react](https://raw.githubusercontent.com/tuanpham-dev/youtube-loop-react/master/screenshot.png)
 
