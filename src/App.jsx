@@ -6,7 +6,7 @@ import YouTube from './YouTube'
 export default class App extends Component {
   constructor(props) {
     super(props)
-    
+
     this.state = {
       nextId: 0,
       videos: [],
@@ -24,7 +24,7 @@ export default class App extends Component {
     const savedVideos = localStorage.get('videos')
     const videos = []
     let nextId = 0
-    
+
     if (savedVideos) {
       savedVideos.forEach(video => {
         videos.push({
@@ -67,6 +67,32 @@ export default class App extends Component {
     })
 
     localStorage.set('videos', videos)
+  }
+
+  moveVideoUp(i) {
+    const videos = [...this.state.videos]
+    const currentVideo = videos[i]
+
+    videos.splice(i, 1)
+    videos.splice(i - 1, 0, currentVideo)
+
+    console.log(videos)
+
+    this.setState({
+      videos
+    })
+  }
+
+  moveVideoDown(i) {
+    const videos = [...this.state.videos]
+    const currentVideo = videos[i]
+
+    videos.splice(i, 1)
+    videos.splice(i + 1, 0, currentVideo)
+
+    this.setState({
+      videos
+    })
   }
 
   stopPlaying() {
@@ -154,6 +180,14 @@ export default class App extends Component {
                 />
 
                 <div className="text-center mt-3">
+                  {i > 0 &&
+                    <button className="btn btn-secondary mr-1" onClick={() => this.moveVideoUp(i)}>Move Up</button>
+                  }
+
+                  {i < this.state.videos.length - 1 &&
+                    <button className="btn btn-secondary mr-1" onClick={() => this.moveVideoDown(i)}>Move Down</button>
+                  }
+
                   <button className="btn btn-danger" onClick={() => this.removeVideo(i)}>Remove Video</button>
                 </div>
               </li>

@@ -5,7 +5,6 @@ import loadYoutubeAPI from './loadYouTubeAPI'
 export default class YouTube extends Component {
   static propTypes = {
     videoId: PropTypes.string,
-    isActive: PropTypes.bool,
     isPlaying: PropTypes.bool,
     onReady: PropTypes.func,
     onPlay: PropTypes.func,
