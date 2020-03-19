@@ -1,6 +1,8 @@
 # YouTube Loop in React
 Repeat YouTube videos
 
+![youtube-loop-react](https://raw.githubusercontent.com/tuanpham-dev/youtube-loop-react/master/screenshot.png)
+
 ## Features
 - ✅ Add video to the list
 - ✅ Remove video
